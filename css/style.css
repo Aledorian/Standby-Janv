@@ -1,0 +1,63 @@
+input, textarea, p, h4{
+  margin-top: 25px;
+
+}
+textarea{
+  resize: none;
+}
+h4, h3{
+  color: rgb(0, 61, 153);
+}
+p{
+  color: rgb(0, 158, 200);
+}
+body{
+  background-color: rgb(224, 224, 224);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0) !important;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid rgb(82, 144, 249);
+    margin-left: 20px;
+    box-shadow: none!important;
+    color: black;
+    border-radius: 0px;
+}
+
+span{
+  font-size: 14px;
+  margin-left: 20px;
+  color: #880000
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgb(111, 111, 111)!important;
+}
+
+.form-control:-moz-placeholder {
+    color: rgb(111, 111, 111)!important;
+}
+
+.form-control::-moz-placeholder {
+    color: rgb(111, 111, 111)!important;
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgb(111, 111, 111)!important;
+}
+
+.form-control:focus {
+    outline: none!important;
+    box-shadow: none!important;
+    border-bottom: 1px solid #0029a6!important;
+}
+#formBTN {
+    float: right;
+    background-color: white !important;
+    box-shadow: none;
+    border: 1px solid rgb(82, 144, 249);
+    color: rgb(0, 158, 200);
+  }
