@@ -8,15 +8,6 @@
 //     });
 
 function empty() {
-    var x;
-    x = document.getElementById("nom").value;
-    if (x == "") {
-        document.getElementById("pasnom").innerHTML = "Entrer votre nom !";
-        document.getElementById("nom").style.borderBottomColor = "#880000";
-    } else {
-        document.getElementById('pasnom').innerHTML = "";
-        document.getElementById('nom').style.borderBottomColor = "rgb(82, 144, 249)"
-    }
 
     y = document.getElementById("prenom").value;
     if (y == "") {
@@ -74,10 +65,15 @@ function checkEmail() {
 function checkName() {
 
     var str = $('#nom').val();
-    if (/^[a-zA-Z0-9- ]*$/.test(str) == false) {
+    if (/^[a-zA-Z0-9- ]*$/.test(str) == false ) {
         document.getElementById("pasnom").innerHTML = "Caractère incorecte dans votre nom.";
         document.getElementById("nom").style.borderBottomColor = "#880000";
-    } else {
+    }
+    else if (str == "") {
+      document.getElementById("pasnom").innerHTML = "Entrez votre nom !.";
+      document.getElementById("nom").style.borderBottomColor = "#880000";
+    }
+    else {
       document.getElementById('pasnom').innerHTML = "";
       document.getElementById('nom').style.borderBottomColor = "rgb(82, 144, 249)"
     }
