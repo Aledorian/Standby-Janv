@@ -13,8 +13,7 @@ function empty() {
     if (x == "") {
         document.getElementById("pasnom").innerHTML = "Entrer votre nom !";
         document.getElementById("nom").style.borderBottomColor = "#880000";
-    }
-    else{
+    } else {
         document.getElementById('pasnom').innerHTML = "";
         document.getElementById('nom').style.borderBottomColor = "rgb(82, 144, 249)"
     }
@@ -23,8 +22,7 @@ function empty() {
     if (y == "") {
         document.getElementById("pasprenom").innerHTML = "Entrer votre prenom !";
         document.getElementById("prenom").style.borderBottomColor = "#880000";
-    }
-    else{
+    } else {
         document.getElementById('pasprenom').innerHTML = "";
         document.getElementById('prenom').style.borderBottomColor = "rgb(82, 144, 249)"
     }
@@ -33,8 +31,7 @@ function empty() {
     if (a == "") {
         document.getElementById("pasnum").innerHTML = "Entrer votre n° de telephone !";
         document.getElementById("telephone").style.borderBottomColor = "#880000";
-    }
-    else{
+    } else {
         document.getElementById('pasnum').innerHTML = "";
         document.getElementById('telephone').style.borderBottomColor = "rgb(82, 144, 249)"
     }
@@ -44,8 +41,7 @@ function empty() {
     if (b == "") {
         document.getElementById("pasmail").innerHTML = "Entrer votre adresse mail !";
         document.getElementById("mail").style.borderBottomColor = "#880000";
-    }
-    else{
+    } else {
         document.getElementById('pasmail').innerHTML = "";
         document.getElementById('mail').style.borderBottomColor = "rgb(82, 144, 249)"
     }
@@ -54,8 +50,7 @@ function empty() {
     if (c == "") {
         document.getElementById("pasmsg").innerHTML = "Entrer votre message !";
         document.getElementById("message").style.borderBottomColor = "#880000";
-    }
-    else{
+    } else {
         document.getElementById('pasmsg').innerHTML = "";
         document.getElementById("message").style.borderBottomColor = "rgb(82, 144, 249)"
     }
@@ -74,4 +69,16 @@ function checkEmail() {
 
     }
     return status;
+}
+
+function checkName() {
+
+    var str = $('#nom').val();
+    if (/^[a-zA-Z0-9- ]*$/.test(str) == false) {
+        document.getElementById("pasnom").innerHTML = "Caractère incorecte dans votre nom.";
+        document.getElementById("nom").style.borderBottomColor = "#880000";
+    } else {
+      document.getElementById('pasnom').innerHTML = "";
+      document.getElementById('nom').style.borderBottomColor = "rgb(82, 144, 249)"
+    }
 }
