@@ -92,3 +92,28 @@ function checkName() {
       document.getElementById('prenom').style.borderBottomColor = "rgb(82, 144, 249)"
     }
 }
+
+$(function() {
+
+    $("#spoiler1").click(function() {
+
+        var opa = $("#monContenu").css("opacity");
+
+        opa = (opa == 1) ? 0 : 1;
+
+        $("#monContenu").animate({
+            "opacity": opa
+        }, "slow");
+    });
+
+    $("#spoiler2").click(function() {
+
+        var opa = $("#monContenubis").css("opacity");
+
+        opa = (opa == 1) ? 0 : 1;
+
+        $("#monContenubis").animate({
+            "opacity": opa
+        }, "slow");
+    });
+});
