@@ -70,14 +70,31 @@ span {
     color: rgb(0, 158, 200);
 }
 
+#formBTN:focus, #formBTN:hover{
+  outline: none!important;
+  box-shadow: none!important;
+  border: 1px solid #0029a6;
+  color : #0029a6;
+  background-color:  #1eadeb !important;
+}
+
+
 #monContenubis, #monContenu {
-    opacity: 0
+    opacity: 0;
 }
 
 #spoiler1, #spoiler2{
-  color: black;
-  font-size: 12px;
-  background-color: rgb(224, 224, 224);
-  border: 1px solid rgb(0, 158, 200);
-;
+  background-color: white !important;
+  box-shadow: none;
+  border: 1px solid rgb(82, 144, 249);
+  color: rgb(0, 158, 200);
+  font-size: 14px;
+}
+
+#spoiler1:focus, #spoiler2:focus, #spoiler2:hover,#spoiler1:hover{
+outline: none!important;
+box-shadow: none!important;
+border: 1px solid #0029a6;
+color : #0029a6;
+background-color: #1eadeb !important;
 }
