@@ -1,5 +1,9 @@
-input, textarea, p, h4 {
+input, textarea, p{
     margin-top: 25px;
+}
+
+h4{
+  margin-top: 40px;
 }
 
 textarea {
