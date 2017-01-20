@@ -1,22 +1,4 @@
-// $(function() {
-//     $('#formBTN').click(function() {
-//
-//             if ($('#nom').val() == '') {
-//                 alert('Empty!!!');
-//             }
-//         });
-//     });
-
 function empty() {
-
-    // y = document.getElementById("prenom").value;
-    // if (y == "") {
-    //     document.getElementById("pasprenom").innerHTML = "Entrer votre prenom !";
-    //     document.getElementById("prenom").style.borderBottomColor = "#880000";
-    // } else {
-    //     document.getElementById('pasprenom').innerHTML = "";
-    //     document.getElementById('prenom').style.borderBottomColor = "rgb(82, 144, 249)"
-    // }
 
     a = document.getElementById("telephone").value;
     if (a == "") {
