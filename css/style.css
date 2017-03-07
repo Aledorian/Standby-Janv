@@ -41,19 +41,23 @@ span {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: rgba(0, 61, 153, 0.65)!important;
+    color: rgba(17, 5, 116, 0.73)!important;
+    font-style: oblique;
 }
 
 .form-control:-moz-placeholder {
-    color: rgba(0, 61, 153, 0.65)!important;
+    color: rgba(17, 5, 116, 0.73)!important;
+    font-style: oblique;
 }
 
 .form-control::-moz-placeholder {
-    color: rgba(0, 61, 153, 0.65)!important;
+    color: rgba(17, 5, 116, 0.73)!important;
+    font-style: oblique;
 }
 
 .form-control:-ms-input-placeholder {
-    color: rgba(0, 61, 153, 0.65)!important;
+    color: rgba(17, 5, 116, 0.73)!important;
+    font-style: oblique;
 }
 
 .form-control:focus {
